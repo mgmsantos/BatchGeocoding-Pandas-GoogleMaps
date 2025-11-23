@@ -36,7 +36,9 @@ O código é tecnicamente versátil, sendo aplicável a qualquer setor que traba
 import os
 import googlemaps
 import pandas as pd
+```
 
+```python
 # ----------------------------------------------------------------------
 # 2. CONFIGURAÇÃO DO CLIENTE GOOGLE MAPS
 # ----------------------------------------------------------------------
@@ -56,7 +58,9 @@ except Exception as e:
     # Captura e exibe qualquer erro de inicialização
     print(f"ERRO CRÍTICO ao iniciar o cliente Google Maps: {e}")
     gmaps = None
+```
 
+```python
 # ----------------------------------------------------------------------
 # 3. FUNÇÃO DE GEOCODIFICAÇÃO
 # ----------------------------------------------------------------------
@@ -96,37 +100,11 @@ def get_coordenadas_google(query_completa):
         # Trata erros inesperados da API (limite de uso, rede, etc.)
         print(f"ERRO na API: {e} | Query: {query_completa}")
         return pd.Series([None, None])
+```
 
-# ----------------------------------------------------------------------
-# 4. EXEMPLO DE APLICAÇÃO EM DATAFRAME
-# ----------------------------------------------------------------------
+```python
+# Assume-se que 'df' é um DataFrame do Pandas carregado com a coluna de texto a ser geocodificada.
+df[["latitude", "longitude"]] = df['ENDERECO_FULL'].apply(get_coordenadas_google)
 
-if __name__ == '__main__':
-    # Cria um DataFrame de exemplo com endereços
-    data = {
-        'ID_Fazenda': [101, 102, 103, 104, 105],
-        'ENDERECO_FULL': [
-            'Fazenda São João, zona rural de Uberaba, MG, Brasil', 
-            'Rua da Agricultura, 1200, Campinas, SP, Brasil', 
-            'Endereço Inexistente XYZ', # Simula um endereço que falhará
-            'Granja Modelo, Toledo, PR, Brasil',
-            'Rua XV de Novembro, 10, Curitiba, PR'
-        ],
-        'Produtividade': [95.5, 88.0, 72.3, 91.2, 85.0]
-    }
-    df = pd.DataFrame(data)
-
-    print("\nDataFrame Original:")
-    print(df)
-    print("-" * 50)
-
-    # Aplica a função de geocodificação na coluna 'ENDERECO_FULL'
-    # e cria duas novas colunas ('latitude' e 'longitude')
-    df[["latitude", "longitude"]] = df['ENDERECO_FULL'].apply(get_coordenadas_google)
-
-    df_coord = df.copy()
-
-    print("\nDataFrame Após Geocodificação:")
-    print(df_coord)
-    print("\nProcesso concluído.")
+df_coord = df
 ```
