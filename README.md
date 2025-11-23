@@ -16,7 +16,7 @@ O código é tecnicamente versátil, sendo aplicável a qualquer setor que traba
 
 ---
 
-## 🛠️ Stack Técnico e Configuração
+## Stack Técnico e Configuração
 
 ### Requisitos
 
@@ -36,7 +36,6 @@ O código é tecnicamente versátil, sendo aplicável a qualquer setor que traba
 import os
 import googlemaps
 import pandas as pd
-import numpy as np # Adicionado para uso em um DataFrame de exemplo
 
 # ----------------------------------------------------------------------
 # 2. CONFIGURAÇÃO DO CLIENTE GOOGLE MAPS
