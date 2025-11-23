@@ -1,3 +1,33 @@
+# Python Geocoding Engine: Solução com Pandas & Google Maps API
+
+---
+
+## Visão Geral do Projeto
+
+Este projeto consiste em uma solução robusta em **Python** para realizar a **geocodificação em lote (batch geocoding)** de endereços, nomes de locais e pontos de interesse, convertendo-os em coordenadas geográficas **(Latitude e Longitude)**.
+
+O código é tecnicamente versátil, sendo aplicável a qualquer setor que trabalhe com grandes bases de dados geográficos e necessite de precisão na localização.
+
+### Funcionalidades Chave:
+
+* **API Geocoding:** Utilização do cliente `googlemaps` para consultas eficientes.
+* **Integração Pandas:** Aplicação direta da função em `DataFrames` do Pandas para processamento em lote.
+* **Robustez:** Implementação de `try/except Exception as e` para gerenciamento de falhas de API (limites de uso, erros de rede, etc.).
+
+---
+
+## 🛠️ Stack Técnico e Configuração
+
+### Requisitos
+
+| Componente | Função |
+| :--- | :--- |
+| **Linguagem:** | Python 3.x |
+| **Bibliotecas:** | `googlemaps`, `pandas` |
+| **API:** | Google Maps Geocoding API |
+
+
+
 ```python
 # ----------------------------------------------------------------------
 # 1. IMPORTAÇÃO DAS BIBLIOTÉCAS NECESSÁRIAS
