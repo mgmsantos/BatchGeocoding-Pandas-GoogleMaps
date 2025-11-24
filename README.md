@@ -20,13 +20,11 @@ O código é tecnicamente versátil, sendo aplicável a qualquer setor que traba
 
 ### Requisitos
 
-| Componente | Função |
-| :--- | :--- |
-| **Linguagem:** | Python 3.x |
-| **Bibliotecas:** | `googlemaps`, `pandas` |
-| **API:** | Google Maps Geocoding API |
+* **Linguagem:** Python.
+* **Bibliotecas:** `os`, `googlemaps`, `pandas`
+* **API:** Google Maps Geocoding API
 
-
+---
 
 ```python
 # ----------------------------------------------------------------------
