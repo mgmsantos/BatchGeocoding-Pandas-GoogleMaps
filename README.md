@@ -2,7 +2,7 @@
 
 ## Visão Geral do Projeto
 
-Este projeto consiste em uma solução robusta em **Python** para realizar a **geocodificação em lote (batch geocoding)** de endereços, nomes de locais e pontos de interesse, convertendo-os em coordenadas geográficas **(Latitude e Longitude)**.
+Este projeto consiste em uma solução Python para realizar a geocodificação em lote (*batch geocoding*) de endereços, nomes de locais e pontos de interesse, convertendo-os em coordenadas geográficas (Latitude e Longitude).
 
 O código é tecnicamente versátil, sendo aplicável a qualquer setor que trabalhe com grandes bases de dados geográficos e necessite de precisão na localização.
 
@@ -130,14 +130,14 @@ df[["latitude", "longitude"]] = df['ENDERECO'].apply(get_coordenadas_google)
 
 ### Aplicações e versatilidade
 O motor de geocodificação construído pode ser aplicado em diversos setores que necessitem de análise espacial de grandes volumes de dados, por exemplo:
-- AgTech (Agricultura e Tecnologia):
+- **AgTech (Agricultura e Tecnologia):**
   - Integração de pontos geocodificados com dados de sensor ou mapas de colheita para análises de geoprocessamento;
   - Mapeamento de fornecedores e rotas para otimizar a distribuição e aplicação de fertilizantes e defensivos;
   - Criação de shapefiles e camadas vetoriais para modelagem de dados territoriais.
-- Business Intelligence (BI):
+- **Business Intelligence (BI):**
   - Mapeamento de clientes e fornecedores para otimizar logística, distribuição e análise de mercado;
   - Criação de indicadores de desempenho (KPIs) baseados em localização geográfica.
-- Análise Urbana e Geomarketing:
+- **Análise Urbana e Geomarketing:**
   - Conversão de endereços para planejamento urbano, definição de zonas de serviço e análise de geomarketing.
 
 ---
