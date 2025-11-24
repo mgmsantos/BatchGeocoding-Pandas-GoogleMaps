@@ -1,12 +1,12 @@
 # Batch Geocoding: Pandas & Google Maps
 
----
-
 ## Visão Geral do Projeto
 
 Este projeto consiste em uma solução robusta em **Python** para realizar a **geocodificação em lote (batch geocoding)** de endereços, nomes de locais e pontos de interesse, convertendo-os em coordenadas geográficas **(Latitude e Longitude)**.
 
 O código é tecnicamente versátil, sendo aplicável a qualquer setor que trabalhe com grandes bases de dados geográficos e necessite de precisão na localização.
+
+---
 
 ### Funcionalidades Chave:
 
