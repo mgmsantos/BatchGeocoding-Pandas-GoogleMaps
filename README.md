@@ -1,4 +1,4 @@
-# Automatização de Geocodificação: Pandas e API Google Maps
+# Automatização de Geocodificação: Pandas & Google Maps
 
 ---
 
