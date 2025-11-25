@@ -84,6 +84,7 @@ except Exception as e:
 # ----------------------------------------------------------------------
 
 def get_coordenadas_google(query):
+
     """
     Converte um endereço de texto em coordenadas geográficas (Lat/Lon) usando 
     a API do Google Maps.
@@ -122,6 +123,10 @@ def get_coordenadas_google(query):
 
 4. Exemplo de aplicação em DataFrame
 ```python
+# ----------------------------------------------------------------------
+# 4. EXECUÇÃO DA FUNÇÃO
+# ----------------------------------------------------------------------
+
 # Considerando que 'df' é um DataFrame carregado com a coluna de texto a ser geocodificada.
 df[["latitude", "longitude"]] = df['ENDERECO'].apply(get_coordenadas_google)
 ```
