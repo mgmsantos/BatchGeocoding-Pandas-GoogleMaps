@@ -10,7 +10,7 @@ O código é tecnicamente versátil, sendo aplicável a qualquer setor que traba
 
 ### Funcionalidades Chave:
 
-* **API Geocoding:** Utilização do cliente `googlemaps` para consultas eficientes.
+* **API Geocoding:** Utilização do client `googlemaps` para consultas eficientes.
 * **Integração Pandas:** Aplicação direta da função em `DataFrames` do Pandas para processamento em lote.
 * **Robustez:** Implementação de `try/except Exception as e` para gerenciamento de falhas de API (limites de uso, erros de rede, etc.).
 
