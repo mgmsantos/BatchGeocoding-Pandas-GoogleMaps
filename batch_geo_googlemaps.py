@@ -59,6 +59,7 @@ def get_coordenadas_google(query):
     # checar se a consulta já está no cachê
     if query in geobatch_cache:
         return pd.Series(geobatch_cache[query])
+    
     try:
         # Realiza a chamada à API
         geocode_result = gmaps.geocode(query)
