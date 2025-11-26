@@ -48,7 +48,7 @@ import pandas as pd
 # 2. CONFIGURAÇÃO DO CLIENTE GOOGLE MAPS
 # ----------------------------------------------------------------------
 
-CHAVE_API_GOOGLE = "AIzaSyATYR0DBO9spMMce_XxlgGJ7EFV62teYYw"
+CHAVE_API_GOOGLE = "DIGITE SUA API AQUI"
 
 try:
     if CHAVE_API_GOOGLE:
