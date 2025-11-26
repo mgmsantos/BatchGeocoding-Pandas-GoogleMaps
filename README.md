@@ -160,11 +160,10 @@ df_teste[["latitude", "longitude"]] = df_teste['ENDERECO'].apply(get_coordenadas
 print(df_teste)
 print(geobatch_cache)
 ```
-
-![Mapa de localização dos pontos geocodificados](/mapa_teste.png)
-
-<img src="/mapa_teste.png" alt="Mapa de localização dos pontos geocodificados" width="350"/>
-
+### 5. Mapa teste com as coordenadas geocodificadas
+<div align = "center">
+    <img src="/mapa_teste.png" alt="Mapa de localização dos pontos geocodificados" width="400"/>
+</div>
 ---
 
 ### Aplicações e versatilidade
