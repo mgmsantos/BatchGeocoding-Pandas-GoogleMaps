@@ -90,7 +90,7 @@ def get_coordenadas_google(query):
     a API do Google Maps.
     
     Args:
-        query_completa (str): O endereço ou nome do local a ser geocodificado.
+        query (str): O endereço ou nome do local a ser geocodificado.
         
     Returns:
         pd.Series: Uma série do Pandas contendo [latitude, longitude].

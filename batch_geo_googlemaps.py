@@ -1,3 +1,5 @@
+# %%
+
 # ----------------------------------------------------------------------
 # 1. IMPORTAÇÃO DAS BIBLIOTÉCAS NECESSÁRIAS
 # ----------------------------------------------------------------------
@@ -5,6 +7,7 @@ import os
 import googlemaps
 import pandas as pd
 
+# %%
 
 # ----------------------------------------------------------------------
 # 2. CONFIGURAÇÃO DO CLIENTE GOOGLE MAPS
@@ -26,6 +29,7 @@ except Exception as e:
     print(f"ERRO CRÍTICO ao iniciar o cliente Google Maps: {e}")
     gmaps = None
 
+# %%
 
 # ----------------------------------------------------------------------
 # 3. FUNÇÃO DE GEOCODIFICAÇÃO
@@ -38,7 +42,7 @@ def get_coordenadas_google(query):
     a API do Google Maps.
     
     Args:
-        query_completa (str): O endereço ou nome do local a ser geocodificado.
+        query (str): O endereço ou nome do local a ser geocodificado.
         
     Returns:
         pd.Series: Uma série do Pandas contendo [latitude, longitude].
@@ -67,6 +71,8 @@ def get_coordenadas_google(query):
         # Trata erros inesperados da API (limite de uso, rede, etc.)
         print(f"ERRO na API: {e} | Consulta: {query}")
         return pd.Series([None, None])
+
+# %%
 
 # ----------------------------------------------------------------------
 # 4. EXECUÇÃO DA FUNÇÃO
