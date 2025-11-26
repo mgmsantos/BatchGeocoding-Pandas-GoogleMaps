@@ -161,6 +161,8 @@ print(df_teste)
 print(geobatch_cache)
 ```
 
+![Mapa de localização dos pontos geocodificados](/mapa_teste.png)
+
 ---
 
 ### Aplicações e versatilidade
